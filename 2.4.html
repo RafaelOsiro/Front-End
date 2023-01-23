@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rafael Osiro">
+        <meta name="keyworkd" content="Formulário, HTML">
+        <meta name="description" content="Aprendendo HTML básico: formulário">
+        <title>HTML - Parte I: formulário</title>
+    </head>
+    <body>
+        <form action="?" method="get">
+            <label>Nome:</label>
+            <input type="text" name="campoNome" placeholder="Insira seu nome">
+            </br>
+            <label>Idade:</label>
+            <input type="number" name="campoIdade" min="0" max="115">
+            </br>
+            <label>Sexo:</label>
+            <input type="radio" name="campoSexo" value="M"> Masculino <!-- O value enviará esse dado em string como "M" -->
+            <input type="radio" name="campoSexo" value="F"> Feminino
+            </br>
+            <label>Interesses:</label>
+            </br>
+            <input type="checkbox" name="campoCarro"> Carro
+            </br>
+            <input type="checkbox" name="campoMoto"> Moto
+            </br>
+            <input type="checkbox" name="campoBarco"> Barco
+            </br>
+            <input type="checkbox" name="campoAviao"> Avião
+            </br>
+            <input type="checkbox" name="campoBicicleta"> Bicicleta
+            </br>
+
+            <label>Estado civil:</label>
+            <select name="campoEstadoCivil">
+                <option value="s">Solteiro(a)</option>
+                <option value="c">Casado(a)</option>
+                <option value="d">Divorciado(a)</option>
+                <option value="v">Viúvo(a)</option>
+            </select>
+            
+
+            </br>
+            <input type="reset" value="Limpar os dados">
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
+
+
