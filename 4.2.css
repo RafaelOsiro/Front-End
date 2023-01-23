@@ -1,0 +1,43 @@
+.paragrafoGrandeVermelho {
+    font-size: 40px;
+    color: #ff0000;
+    font-style: normal;
+}
+
+.fundoVermelho {
+    background-color: #ff0000;
+    color: #00ff00;
+}
+
+.corBranco {
+    color: #ffffff;
+}
+
+p {
+    font-style: italic;
+}
+
+/* Qualquer atributo que possuam id 'rodape' vão utilizar esse atributo */
+/* Estilos que possuam somente o id definido serão aplicados primeiro.*/
+#rodape {
+    font-size: 30px;
+    background-color: #ffdddd;
+}
+
+/* A marcação 'p' que possuam id 'rodape' vão utilizar esse atributo*/
+/* Estilos que possuam a marcação HTML, nesse exemplo é 'p', e o estilo personalizado, nesse exemplo 'rodape', sobrescreverá todos os atributos */
+p#rodape {
+    /* font-size: 14px; */
+    background-color: #ff3333;
+}
+
+p#dica {
+    /* font-size: 14px; */
+    background-color: #0000ff;
+}
+
+/* Só vai utilizar os elementos para a tabela */
+/* Vai herdar todos os elementos do estilo personalizado paragrafoGrandeVermelho e vai mudar a font-size para 80px */
+th.paragrafoGrandeVermelho {
+    font-size: 80px;
+}
