@@ -1,0 +1,46 @@
+.positionDaImagem {
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.imagemCentralizada {
+    position: absolute;
+    /* 
+        Fazer com que a imagem fique centralizada no meio da página.
+        Sem o 'margin-left' a imagem irá começar no 50% do alinhamento horizontal e faz com que a imagem não fique centralizada.
+        A lógica será: coloque a imagem para começar em 50% da view. Depois diminua 320 pixels da margem esquerda. (Os 320 pixels é a metade da largura da imagem.)
+    */
+    left: 50%;
+    margin-left: -50px;
+    /* 
+        Fazer com que a imagem fique centralizada no meio da página.
+        Sem o 'margin-left' a imagem irá começar no 50% do alinhamento horizontal e faz com que a imagem não fique centralizada.
+        A lógica será: coloque a imagem para começar em 50% da view. Depois diminua 320 pixels da margem esquerda. (Os 320 pixels é a metade da largura da imagem.)
+    */
+    top: 50%;
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+.painelCentral {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    margin-left: -200px;
+    margin-top: -200px;
+}
+
+/* Remove as bordas do body */
+body {
+    margin: 0px;
+    padding: 0px;
+}
