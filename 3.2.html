@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rafael Osiro">
+        <meta name="keyworkd" content="Textos avançados, Semântica, Otimização">
+        <meta name="description" content="Aprendendo os textos avançados e semântica">
+        <title>Textos Avançados</title>
+    </head>
+    <body>
+        <p>
+            Esta página <b>apresenta</b> trechos de cógios 
+            do <strong> algoritmos de busca binária</strong>
+        </p>
+        <p>
+            O nome da &nbsp;&nbsp;&nbsp; busca vem do inglês <em> binary search algorithm.</em>
+        </p>
+        <p>
+            O evento sobre <strong> algoritmo de busca binária</strong>
+            será no dia <b>10/10</b>
+        </p>
+        <code>
+            <pre>
+            public static int buscaBinaria(int[] array, int valor) {
+                int inicio = 0;
+                int fim = array.lenght-1;
+                while(inicio <= fim) {
+                    int meio = (inicio+fim)/2;
+                    if(array[meio] == valor) {
+                        return meio;
+                    }
+                    if(valor > array[meio]) {
+                        inicio = meio + 1;
+                    } else {
+                        fim = meio + 1;
+                    }
+                }
+                return -1;
+            }
+            </pre>
+        </code>
+        <p>
+            O algoritmo inicia criando as variáveis <var>inicio</var> e <var>fim</var>.
+            O programa inciará quando o usuário pressionar a tecla <kbd>ENTER</kbd>.
+            O resultado desse resultado será <samp>5 BUSCAS</samp>.
+        </p>
+        <p>
+            A fórmula da água é: H<sub>2</sub>O.
+        </p>
+        <p>
+            A fórmula do cálculo da hipotenusa é: a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup>.
+        </p>
+
+
+    </body>
+</html>
