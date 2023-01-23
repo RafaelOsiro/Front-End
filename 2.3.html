@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Rafael Osiro">
+        <meta name="keywords" content="Imagens, Vídeos, Listas, Tabelas, HTML">
+        <meta name="description" content="Aprendendo HTML básico: imagens, vídeos, listas e tabelas">
+        <title>HTML - Parte I: imagens, vídeos, listas e tabelas</title>
+    </head>
+    <body>
+        <h1>Imagens</h1>
+        <img src="../../Captura de Tela 2022-12-22 às 16.47.01.png" alt="Print de alguma coisa"> <!-- Quando o google catalogar essa imagem, ele vai catalogar essa descrição com a imagem e poderá ser buscado no google pela pesquisa de texto que contém o alt ou então na busca da imagem -->
+
+        <figure>
+            <a href="https://www.google.com.br">
+            <img src="../../japones_tudo_igual_01 (1).jpg">
+            <figcaption>Japonês é tudo igual</figcaption>
+            </a>
+        </figure>
+
+        <h1>Vídeos</h1>
+        <video width="1179" height="2556" controls>
+            <source src="../../Simulator Screen Recording - iPhone 14 Pro - 2022-11-25 at 12.03.53.mp4" type="video/mp4">
+            Seu navegador não suporta esse vídeo
+        </video>
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/1nVUfZg2dSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h1>Listas</h1>
+        <ul>
+            <li>HTML</li>
+            <ul>
+                <li>Marcações</li>
+                <li>Criação de link</li>
+            </ul>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Ajax</li>
+        </ul>
+
+        <ol>
+            <li>McLaren</li>
+            <li>Ferrari</li>
+            <li>Red bull</li>
+        </ol>
+
+        <h1>Tabelas</h1>
+        <table border=1>
+            <caption>Relatório dos pilotos de Fórmula 1</caption>
+            <tr>
+                <!-- Usar o TH somente para o título da coluna da tabela -->
+                <th>Nome do piloto</th>
+                <th>Pontuação do piloto</th>
+                <th>Ativo</th>
+                <th>Equipe</th>
+            </tr>
+            <tr>
+                <!-- Usar o TD somente para os dados da tabela -->
+                <td>Lewis</td>
+                <td>40</td>
+                <td rowspan=4>Sim</td>
+                <td rowspan=2>Mercedes</td>
+            </tr>
+            <tr>
+                <td colspan=2>DESCLASSIFICADO</td>
+            </tr>
+            <tr>
+                <td>Felipe</td>
+                <td>46</td>
+                <td>Ferrari</td>
+            </tr>
+            <tr>
+                <td>Vettel</td>
+                <td>49</td>
+                <td>Ferrari</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
