@@ -1,0 +1,81 @@
+p#esquerda {
+    margin-top: 0px;
+    margin-bottom: 100px;
+    text-align: left;
+    background-color: #ffdddd;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+p#direita {
+    text-align: right;
+    background-color: #ddffdd;
+    font-style: italic;
+}
+
+p#centralizado {
+    text-align: center;
+    background-color: #ddddff;
+    width: 500px;
+}
+
+p#justificado {
+    text-align: justify;
+    background-color: #ffffdd;
+}
+
+@font-face {
+    font-family: Star Jedi Hollow;
+    src: url('fonts/Starjhol.woff');
+}
+
+p#star {
+    font-family: Star Jedi Hollow;
+    color: #ff0000;
+    font-size: xx-large;
+}
+
+.parteSublinhada {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.menor {
+    font-size: small;
+}
+
+.normal {
+    font-size: medium;
+}
+
+.maior {
+    font-size: large;
+}
+
+a:link {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff0000;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:active {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
