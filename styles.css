@@ -1,0 +1,96 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div#painelA {
+    background-color: #ff0000;
+    width: 50%;
+    height: 400px;
+    color: white;
+
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div#painelB {
+    background-color: #00ff00;
+    width: 50%;
+    height: 200px;
+    color: black;
+
+    
+    position: absolute;
+    top: 0px;
+    left: 50%;
+}
+
+div#painelC {
+    background-color: #0000ff;
+    width: 25%;
+    height: 200px;
+    color: white;
+
+
+    position: absolute;
+    top: 200px;
+    left: 50%;
+}
+
+div#painelD {
+    background-color: #ffff00;
+    width: 25%;
+    height: 200px;
+    color: black;
+
+
+    position: absolute;
+    top: 200px;
+    left: 75%;
+}
+
+p {
+    margin: 0px;
+}
+
+@media (max-width: 768px) {
+    div#painelA {
+        width: 100%;
+    }
+    div#painelB {
+        top: 400px;
+        left: 0px;
+        width: 100%;
+    }
+    div#painelC {
+        top: 600px;
+        left: 0px;
+        width: 50%;
+    }
+    div#painelD {
+        top: 600px;
+        left: 50%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 390px) {
+    div#painelC {
+        top: 600px;
+        left: 0px;
+        width: 100%;
+    }
+    div#painelD {
+        top: 800px;
+        left: 0%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    p {
+        text-decoration: underline;
+    }
+}
