@@ -1,0 +1,166 @@
+div#alerta {
+    background-color: #ff0000;
+    width: 500px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+
+    animation-name: animacaoAlerta;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacaoAlerta {
+    from {
+        background-color: #000000;
+        font-size: medium;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    to {
+        background-color: #ff0000;
+        font-size: x-large;
+        position: absolute;
+        left: 100px;
+        top: 200px;
+    }
+}
+
+div#alertaContinuo {
+    background-color: #ff0000;
+    width: 500px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+
+    animation-name: animacaoAlertaContinuo;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacaoAlertaContinuo {
+    0% {
+        background-color: #000000;
+        font-size: medium;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: #00ff00;
+        position: absolute;
+        left: 666px;
+        top: 666px;
+    }
+
+    100% {
+        background-color: #ff0000;
+        font-size: x-large;
+        position: absolute;
+        left: 333px;
+        top: 333px;
+    }
+}
+
+div#alertaContinuoSuave {
+    background-color: #ff0000;
+    width: 500px;
+    height: 50px;
+
+    text-align: center;
+    line-height: 50px;
+
+    animation-name: animacaoAlertaContinuoSuave;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacaoAlertaContinuoSuave {
+    0%, 100% {
+        background-color: #ff0000;
+        font-size: medium;
+        position: absolute;
+        left: 1000px;
+        top: 0px;
+    }
+
+    33% {
+        background-color: #00ff00;
+        position: absolute;
+        left: 333px;
+        top: 333px;
+    }
+
+    66% {
+        background-color: #ffff00;
+        position: absolute;
+        left: 666px;
+        top: 111px;
+    }
+}
+
+div#alertaContinuoSuaveSome {
+    background-color:brown;
+    width: 500px;
+    height: 50px;
+    opacity: 0;
+
+    text-align: center;
+    line-height: 50px;
+
+    animation-name: animacaoAlertaContinuoSuaveSome;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacaoAlertaContinuoSuaveSome {
+    0% {
+        background-color: brown;
+        font-size: medium;
+        position: absolute;
+        left: 1000px;
+        top: 1000px;
+        opacity: 1;
+    }
+
+    33% {
+        background-color: cyan;
+        color: black;
+        position: absolute;
+        left: 1000px;
+        top: 333px;
+        opacity: 1;
+    }
+
+    66% {
+        background-color: purple;
+        color: white;
+        position: absolute;
+        left: 1000px;
+        top: 666px;
+        opacity: 1;
+    }
+
+    80% {
+        background-color: purple;
+        color: white;
+        position: absolute;
+        left: 1000px;
+        top: 800px;
+        opacity: 0.2;
+    }
+
+    100% {
+        background-color: brown;
+        font-size: medium;
+        position: absolute;
+        left: 1000px;
+        top: 1000px;
+        opacity: 0;
+    }
+}
