@@ -1,0 +1,58 @@
+.iconeA {
+    list-style-type: square;
+}
+
+.iconeB {
+    list-style-type: circle;
+}
+
+.iconeC {
+    list-style-image: url('assets/star.png');
+}
+
+.numeracaoA {
+    list-style-type: upper-roman;
+}
+
+.numeracaoB {
+    list-style-type: lower-alpha;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #333333;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr {
+    background-color: #dddddd;
+}
+
+tr {
+    font-style: italic;
+}
+
+tr:nth-child(even) {
+    background-color: #aaaaaa;
+}
+
+td:nth-child(odd) {
+    background-color: #eeffee;
+}
+td, tr, .minhaImagem {
+    border: 1px solid #000000;
+}
+
+td.especial {
+    background-color: #ffff00;
+}
+
+.conteudoNegrito {
+    font-weight: bold;
+}
