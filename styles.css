@@ -1,0 +1,46 @@
+div#painelA {
+    width: 600px;
+    height: 600px;
+    background-color: #ffdddd;
+}
+
+div#painelB {
+    width: 600px;
+    height: 500px;
+    background-color: #ddddff;
+
+    position: absolute;
+    left: 630px;
+    top: 15px;
+}
+
+.tamanhoImagem {
+    width: 300px;
+    height: 300px;
+}
+
+.tamanhoImagem2 {
+    width: 250px;
+    height: 50px;
+}
+
+.flutuarEsquerda {
+    float: left;
+    margin-right: 15px;
+}
+
+.flutuarDireita {
+    float: right;
+    margin-left: 15px;
+}
+
+.estiloExibicao {
+    /* Não quebra a linha */
+    /* display: inline; */
+    /* Quebra a linha */
+    /* display: block; */
+    /* Não apresentar os elementos na tela */
+    /* display: none; */
+    /* Apresentar os elementos na tela, quando ela estiver em none */
+    display: initial;
+}
