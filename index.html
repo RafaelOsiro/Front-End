@@ -11,7 +11,92 @@
     </head>
     <body>
         <script>
-            
+            var a = false;
+            var b = !a;
+            document.write("a: " + a + "<br>");
+            document.write("b (!a): " + b + "<br>");
+
+            var resultado = true && true;
+            document.write("Resultado (true && true): " + resultado + "<br>");
+
+            var resultado = true && false;
+            document.write("Resultado (true && false): " + resultado + "<br>");
+
+            var resultado = true || true;
+            document.write("Resultado (true || true): " + resultado + "<br>");
+
+            var resultado = true || false;
+            document.write("Resultado (true || false): " + resultado + "<br>");
+
+            resultado = 5 == 6;
+            document.write("Resultado (5 == 6): " + resultado + "<br>");
+
+            resultado = 5 == 5;
+            document.write("Resultado (5 == 5): " + resultado + "<br>");
+
+            resultado = 5 === "5";
+            document.write("Resultado (5 === \"5\"): " + resultado + "<br>");
+
+            resultado = 5 === 5;
+            document.write("Resultado (5 === 5): " + resultado + "<br>");
+
+            resultado = 5 == "5";
+            document.write("Resultado (5 == \"5\"): " + resultado + "<br>");
+
+            resultado = 5 == 5;
+            document.write("Resultado (5 == 5): " + resultado + "<br>");
+
+            resultado = 5 > 7;
+            document.write("Resultado (5 > 7): " + resultado + "<br>");
+
+            resultado = 5 <= 7;
+            document.write("Resultado (5 <= 7): " + resultado + "<br>");
+
+            var horario = 32;
+            if(horario >= 0 && horario < 12) {
+                document.write("Bom dia!<br>");
+            } else if (horario >= 12 && horario < 18) {
+                document.write("Boa tarde!<br>");
+            } else if(horario >= 18 && horario <= 23) {
+                document.write("Boa noite!<br>");
+            } else {
+                document.write("Horário inválido!<br>")
+            }
+
+            var numero = 5;
+            if(numero % 2 == 0) {
+                document.write("PAR <br>");
+            } else {
+                document.write("ÍMPAR <br>");
+            }
+
+            var alfa = 44;
+
+            switch(alfa) {
+                case 4:
+                    document.write("Quatro<br>");
+                    break;
+                case 5:
+                    document.write("Cinco<br>");
+                    break;
+                case 6:
+                    document.write("Seix<br>");
+                    break;
+                default:
+                    document.write("O número não foi encontrado<br>");
+                    break;
+            }
+
+            var idade = 18;
+            switch(idade) {
+                case 18:
+                    document.write("Você pode consumir bebidas");
+                case 10:
+                    document.write("Olá!");
+                    break;
+            }
+            document.write("<br>");
+
         </script>
     </body>
 </html>
