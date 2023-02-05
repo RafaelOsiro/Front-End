@@ -11,7 +11,69 @@
     </head>
     <body>
         <script>
-            
+            for(var i = 0; i <= 10; i++) {
+                document.write(i + ' ');
+            }
+            document.write("<br>");
+
+            for(var i = 5; i >= 1; i--) {
+                document.write(i + ' ');
+            }
+            document.write("<br>");
+
+            for(var i = 0; i <= 20; i=i+2) {
+                document.write(i + ' ');
+            }
+            document.write("<br>");
+
+            var minhaLista = new Array("Fulano", "Beltrano", "Ciclano");
+            for(nome in minhaLista) {
+                document.write("Bom dia " + nome + " ");
+                document.write("Bom dia " + minhaLista[nome] + " ");
+            }
+            document.write("<br>");
+
+            var i = 1;
+            while(i < 7) {
+                document.write("i: " + i + " ");
+                i++;
+            }
+            document.write("<br>");
+
+            i = 100;
+            do {
+                document.write("i: " + i + " ");
+                i++;
+            } while(i <= 150);
+            document.write("<br>");
+
+            for(var i = 0; i <= 10; i++) {
+                document.write(i + ' ');
+                if(i == 5) {
+                    document.write("Chegou no final do código");
+                    break;
+                }
+            }
+            document.write("Chegou no final do código");
+            document.write("<br>");
+
+            for(var i = 0; i <= 10; i++) {
+                document.write(i + ' ');
+                if(i == 5) {
+                    continue;
+                }
+            }
+            document.write("Chegou no final do código");
+            document.write("<br>");
+
+            var naipes = new Array("Copas", "Paus", "Ouros", "Espadas");
+            for(naipeIndiceNumero in naipes) {
+
+                for(var i = 0; i <= 13; i++) {
+                    document.write(i + " " + naipes[naipeIndiceNumero] + "<br>");
+                }
+            }
+
         </script>
     </body>
 </html>
