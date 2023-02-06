@@ -10,6 +10,33 @@
         <script src="javascript.js"></script>
     </head>
     <body>
-    
+        <script>
+            function acessarURL() {
+                location.href = "https://www.google.com.br";
+            }
+
+            function novaURLemUmaNovaJanela() {
+                open("https://www.google.com.br");
+            }
+
+            function trocarImagem() {
+                var imagem = document.getElementById("corImagem");
+                imagem.src = "red.png";
+            }
+
+            function agendarTarefa() {
+                alert("Tarefa executada");
+
+            }
+            setTimeout(agendarTarefa, 5 * 1000);
+
+        </script>
+        <input type="button" onclick="acessarURL();" value="Acessar URL"/>
+        <br><br>
+        <input type="button" onclick="novaURLemUmaNovaJanela();" value="Acessar URL em uma nova janela">
+        <br><br>
+        <img src="blue.png" id="corImagem"/>
+        <br>
+        <input type="button" onclick="trocarImagem();" value="Clique para trocar imagem">
     </body>
 </html>
