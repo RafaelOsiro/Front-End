@@ -10,6 +10,33 @@
         <script src="javascript.js"></script>
     </head>
     <body>
-        
+        <form method="get" action="?" name="cadastro">
+            <span>Nome completo: </span>
+            <input type="text" name="nome">
+            <br>
+
+            <span>Sexo: </span>
+            <input type="radio" name="sexo" value="M">
+            <span>Masculino</span>
+            <input type="radio" name="sexo" value="F">
+            <span>Feminino</span>
+            <br>
+
+            <input type="checkbox" name="maiorDe18Anos" value="maior">
+            <span>Declaro ser maior de 18 anos</span>
+            <br>
+
+            <span>Como conheceu o site?</span>
+            <select name="comoConheceuOSite">
+                <option value="nenhum">Selecione...</option>
+                <option value="indicacao">Indicação de um amigo</option>
+                <option value="outro">Outro site</option>
+                <option value="google">Google</option>
+            </select>
+            <br>
+
+            <input type="reset" value="Limpar os dados">
+            <input type="button" value="Enviar" onclick="validarFormulario();">
+        </form>
     </body>
 </html>
