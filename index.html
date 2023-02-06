@@ -8,10 +8,21 @@
         <meta name="description" content="JavaScript II">
         <title>JavaScript II</title>
         <script src="javascript.js"></script>
-    </head>
-    <body>
         <script>
-            
+            function cliqueDoMouse() {
+                alert('Mouse clicou!');
+            }
         </script>
+    </head>
+    <body onLoad="alert('Página carregou');">
+        <a href="#" onMouseOver="alert('Mouse passou por aqui!');">Passe o mouse por aqui</a>
+        <br><br><br>
+        <a href="#" onClick="cliqueDoMouse();">Clique aqui</a>
+        <br><br><br>
+        <form action="">
+            <input type="text" value="Clique neste campo" onFocus="alert('Ativou o campo');">
+            <input type="text" value="Digite aqui" onkeypress="alert('Digitou');">
+        </form>
+        <br><br><br>
     </body>
 </html>
